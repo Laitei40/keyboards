@@ -1,0 +1,31 @@
+{
+  "id": "german_ibm",
+  "name": "German (IBM)",
+  "jsFilename": "german_ibm.js",
+  "platformSupport": {
+    "desktopWeb": "full",
+    "ios": "basic",
+    "android": "basic"
+  },
+  "version": "1.0",
+  "license": "mit",
+  "languages": {
+    "de": {
+      "example": {
+        "keys": "Schuhgr;-e",
+        "text": "Schuhgr\u00F6\u00DFe",
+        "note": "\"Shoe size\""
+      },
+      "displayName": "German",
+      "languageName": "German"
+    }
+  },
+  "lastModifiedDate": "2023-08-11T07:10:37Z",
+  "sourcePath": "legacy/g/german_ibm",
+  "encodings": [
+    "unicode"
+  ],
+  "jsFileSize": 8127,
+  "minKeymanVersion": "5.0",
+  "helpLink": "https://help.keyman.com/keyboard/german_ibm"
+}

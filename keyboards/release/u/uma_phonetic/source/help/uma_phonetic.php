@@ -1,0 +1,19 @@
+<?php 
+  $pagename = 'Uma Phonetic Keyboard Help';
+  $pagetitle = $pagename;
+  require_once('header.php');
+?>
+
+<p>
+    Uma Phonetic Keyboard version 1.1 created for the Houma Language Project for typing in Uma.
+</p>
+
+<h2>Desktop Keyboard Layout</h2>
+<div id='osk' data-states='default shift'>
+</div>
+
+<h2>Mobile/Tablet Keyboard Layout</h2>
+<div id='osk-tablet' data-states='default shift numeric'>
+</div>
+
+<p>© Houma Language Project</p>

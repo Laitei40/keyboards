@@ -1,0 +1,173 @@
+﻿store(&VERSION) "10.0"
+store(&KEYBOARDVERSION) '10.0'
+store(&TARGETS) 'any'
+store(&COPYRIGHT) '© 2008-2021 FirstVoices, SIL International. Portions © 2006 Chris Harvey.'
+store(&NAME) 'X̄aʼislak̓ala'
+store(&VISUALKEYBOARD) 'fv_xaislakala.kvks'
+store(&BITMAP) 'fv_xaislakala.ico'
+store(&LAYOUTFILE) 'fv_xaislakala.keyman-touch-layout'
+
+begin Unicode > use(main)
+
+
+group(main) using keys 
+c --- START OF TOUCH LAYOUT RULES ---
+
+c Touch layout rules originally imported from KeyMap.plist on Tue Nov 17 2015
+
++ [SHIFT T_Q_0] > 'Q̓' layer('default')
++ [SHIFT T_Q] > 'Q' layer('default')
++ [SHIFT T_W_0] > 'W̓' layer('default')
++ [SHIFT T_W] > 'W' layer('default')
++ [SHIFT T_E] > 'E' layer('default')
++ [SHIFT T_T_0] > 'T̓' layer('default')
++ [SHIFT T_T] > 'T' layer('default')
++ [SHIFT T_Y_0] > 'Y̓' layer('default')
++ [SHIFT T_Y] > 'Y' layer('default')
++ [SHIFT T_U] > 'U' layer('default')
++ [SHIFT T_I] > 'I' layer('default')
++ [SHIFT T_O] > 'O' layer('default')
++ [SHIFT T_P_0] > 'P̓' layer('default')
++ [SHIFT T_P] > 'P' layer('default')
++ [SHIFT T_A] > 'A' layer('default')
++ [SHIFT T_S] > 'S' layer('default')
++ [SHIFT T_D] > 'D' layer('default')
++ [SHIFT T_F] > 'ʼ' layer('default')
++ [SHIFT T_G_0] > 'Ḡ' layer('default')
++ [SHIFT T_G] > 'G' layer('default')
++ [SHIFT T_H] > 'H' layer('default')
++ [SHIFT T_J] > 'ᵒ' layer('default')
++ [SHIFT T_K_0] > 'K̓' layer('default')
++ [SHIFT T_K] > 'K' layer('default')
++ [SHIFT T_L_0] > 'L̓' layer('default')
++ [SHIFT T_L] > 'L' layer('default')
++ [SHIFT T_COLON_0] > '"' layer('default')
++ [SHIFT T_COLON] > "'" layer('default')
++ [SHIFT T_Z] > 'Z' layer('default')
++ [SHIFT T_X_0] > 'X̄' layer('default')
++ [SHIFT T_X] > 'X' layer('default')
++ [SHIFT T_C_0] > 'C̓' layer('default')
++ [SHIFT T_C] > 'C' layer('default')
++ [SHIFT T_B] > 'B' layer('default')
++ [SHIFT T_N_0] > 'N̓' layer('default')
++ [SHIFT T_N] > 'N' layer('default')
++ [SHIFT T_M_0] > 'M̓' layer('default')
++ [SHIFT T_M] > 'M' layer('default')
++ [T_Q_0] > 'q̓'
++ [T_Q] > 'q'
++ [T_W_0] > 'w̓'
++ [T_W] > 'w'
++ [T_E] > 'e'
++ [T_T_0] > 't̓'
++ [T_T] > 't'
++ [T_Y_0] > 'y̓'
++ [T_Y] > 'y'
++ [T_U] > 'u'
++ [T_I] > 'i'
++ [T_O] > 'o'
++ [T_P_0] > 'p̓'
++ [T_P] > 'p'
++ [T_A] > 'a'
++ [T_S] > 's'
++ [T_D] > 'd'
++ [T_F] > 'ʼ'
++ [T_G_0] > 'ḡ'
++ [T_G] > 'g'
++ [T_H] > 'h'
++ [T_J] > 'ᵒ'
++ [T_K_0] > 'k̓'
++ [T_K] > 'k'
++ [T_L_0] > 'l̓'
++ [T_L] > 'l'
++ [T_COLON_0] > '"'
++ [T_COLON] > "'"
++ [T_Z] > 'z'
++ [T_X_0] > 'x̄'
++ [T_X] > 'x'
++ [T_C_0] > 'c̓'
++ [T_C] > 'c'
++ [T_B] > 'b'
++ [T_N_0] > 'n̓'
++ [T_N] > 'n'
++ [T_M_0] > 'm̓'
++ [T_M] > 'm'
+
+store(NeedsComApos) 'cklmnpqtwyCKLMNPQTWY' c ComApos -> Combining Apostrophe
+store(ComAposKeys) [SHIFT T_R] [T_R]
+store(NeedsMac) 'xgXG' c Mac -> Macron
+store(MacKeys) [SHIFT T_V] [T_V]
+
+any(NeedsComApos) + any(ComAposKeys) > index(NeedsComApos,1) U+0313
+any(NeedsMac) + any(MacKeys) > index(NeedsMac,1) U+0304
+   
+c --- END OF TOUCH LAYOUT RULES ---
+
+
+c constraints
+ 
+
+store(overaccent)  U+0313 U+0304   c eje mac
+store(overaccentkey) [K_slash] [k_lbrkt]
+
+ 
+any(overaccent) + any(overaccentkey) > context beep  
+ 
+store(NumbersAndPunctuation) '°1234567890-=[]\;,./`~!@#$%^&*()_+{}|:"<>?‘’“”‹›«»' "'"  c preventing accents on non-letters
+any(NumbersAndPunctuation) + any(overaccentkey) > context beep
+
+c original punctuation
++ [RALT K_PERIOD] > '>'
++ [RALT K_COMMA] > '<'
++ [SHIFT RALT K_BKQUOTE] > '~'
++ [RALT K_BKQUOTE] > '`'
++ [SHIFT RALT K_COLON] > ':'
++ [RALT K_COLON] > ';'
++ [RALT K_SLASH] > '/'
++ [SHIFT RALT K_SLASH] > '/' c alternate way to type Slash in Google Workspace
++ [RALT K_QUOTE] > U+0027
++ [RALT K_BKSLASH] > '\'
++ [SHIFT RALT K_BKSLASH] > '|'
++ [SHIFT RALT K_RBRKT] > '}'
++ [SHIFT RALT K_LBRKT] > '{'
++ [RALT K_RBRKT] > ']'
++ [RALT K_LBRKT] > '['
++ [RALT K_EQUAL] > '='    
++ [RALT shift K_EQUAL] > '+'
++ [RALT K_HYPHEN] > '_' 
+
+c Guillemets
++ [SHIFT RALT K_0] > '›'
++ [SHIFT RALT K_9] > '‹'
++ [RALT K_0] > '»'
++ [RALT K_9] > '«'
+
+c Quotes
++ [SHIFT K_RBRKT] > "”"
++ [SHIFT K_lbrkt] > "“"
++ [shift K_BKQUOTE] > "‘"
++ [K_QUOTE] > "’"      
+
+c Punctuation New
++ [shift k_comma] > ";"
++ [shift k_period] > ":"
+
+c language
++ [K_bkquote] > "'"  
++ [k_colon] > '°'   
+                                             
++ [K_LBRKT] > U+0304    
++ [K_RBRKT] > "'"
++ [k_slash] > U+0313 
+match > use(normalize)
+nomatch > use(x)
+
+group(normalize)
+
+c any(overaccent) any(underaccent) > context(2) context(1)
+
+
+group(x) using keys
+
+
+
+

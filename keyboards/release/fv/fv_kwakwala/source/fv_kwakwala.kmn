@@ -1,0 +1,178 @@
+﻿store(&VERSION) "10.0"
+store(&KEYBOARDVERSION) '9.2'
+store(&TARGETS) "any"
+c store(&ETHNOLOGUECODE) "kwk"
+store(&COPYRIGHT) '(c) 2008-2024 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey'
+store(&NAME) 'Kwak̕wala'
+store(&BITMAP) 'fv_kwakwala.ico'
+store(&VISUALKEYBOARD) 'fv_kwakwala.kvks'
+
+
+begin Unicode > use(main)
+
+group(main) using keys
+
+
+c --- START OF TOUCH LAYOUT RULES ---
+
+c Touch layout rules originally imported from KeyMap.plist on Tue Nov 17 2015
+
+store(&LAYOUTFILE) 'fv_kwakwala.keyman-touch-layout'
+
++ [SHIFT T_Q] > 'A̱' layer('default')
++ [SHIFT T_W] > 'W' layer('default')
++ [SHIFT T_E] > 'E' layer('default')
++ [SHIFT T_R] > 'Ł' layer('default')
++ [SHIFT T_T_0] > 'T̓' layer('default')
++ [SHIFT T_T_1] > 'T̕ł' layer('default')
++ [SHIFT T_T_2] > 'T̕Ł' layer('default')
++ [SHIFT T_T_3] > 'T̕s' layer('default')
++ [SHIFT T_T_4] > 'T̕S' layer('default')
++ [SHIFT T_T] > 'T' layer('default')
++ [SHIFT T_Y] > 'Y' layer('default')
++ [SHIFT T_U] > 'U' layer('default')
++ [SHIFT T_I] > 'I' layer('default')
++ [SHIFT T_O] > 'O' layer('default')
++ [SHIFT T_P_0] > 'P̓' layer('default')
++ [SHIFT T_P] > 'P' layer('default')
++ [SHIFT T_A] > 'A' layer('default')
++ [SHIFT T_S] > 'S' layer('default')
++ [SHIFT T_D] > 'D' layer('default')
++ [SHIFT T_F] > 'G̱' layer('default')
++ [SHIFT T_G] > 'G' layer('default')
++ [SHIFT T_H] > 'H' layer('default')
++ [SHIFT T_J_0] > 'Ḵ̓' layer('default')
++ [SHIFT T_J_1] > 'Ḵ̕w' layer('default')
++ [SHIFT T_J_2] > 'Ḵ̕W' layer('default')
++ [SHIFT T_J] > 'Ḵ' layer('default')
++ [SHIFT T_K_0] > 'K̓' layer('default')
++ [SHIFT T_K_1] > 'K̕w' layer('default')
++ [SHIFT T_K_2] > 'K̕W' layer('default')
++ [SHIFT T_K] > 'K' layer('default')
++ [SHIFT T_L] > 'L' layer('default')
++ [SHIFT T_COLON_0] > '"' layer('default')
++ [SHIFT T_COLON] > "'" layer('default')
++ [SHIFT T_Z] > 'Z' layer('default')
++ [SHIFT T_X] > 'X' layer('default')
++ [SHIFT T_C] > 'X̱' layer('default')
++ [SHIFT T_B] > 'B' layer('default')
++ [SHIFT T_N] > 'N' layer('default')
++ [SHIFT T_M] > 'M' layer('default')
++ [T_Q] > 'a̱'
++ [T_W] > 'w'
++ [T_E] > 'e'
++ [T_R] > 'ł'
++ [T_T_0] > 't̓'
++ [T_T_1] > 't̕ł'
++ [T_T_2] > 't̕s'
++ [T_T] > 't'
++ [T_Y] > 'y'
++ [T_U] > 'u'
++ [T_I] > 'i'
++ [T_O] > 'o'
++ [T_P_0] > 'p̓'
++ [T_P] > 'p'
++ [T_A] > 'a'
++ [T_S] > 's'
++ [T_D] > 'd'
++ [T_F] > 'g̱'
++ [T_G] > 'g'
++ [T_H] > 'h'
++ [T_J_0] > 'ḵ̓'
++ [T_J_1] > 'ḵ̕w'
++ [T_J] > 'ḵ'
++ [T_K_0] > 'k̓'
++ [T_K_1] > 'k̕w'
++ [T_K] > 'k'
++ [T_L] > 'l'
++ [T_COLON_0] > '"'
++ [T_COLON] > "'"
++ [T_Z] > 'z'
++ [T_X] > 'x'
++ [T_C] > 'x̱'
++ [T_B] > 'b'
++ [T_N] > 'n'
++ [T_M] > 'm'
+
+store(NeedsComApos) 'kḵptKḴPT'
+store(ComAposKeys) [T_V] [SHIFT T_V]
+
+any(NeedsComApos) + any(ComAposKeys) > index(NeedsComApos,1) U+0313
+
+'k̓' + [T_W] > 'k̕w'
+'ḵ̓' + [T_W] > 'ḵ̕w'
+'t̓' + [T_R] > 't̕ł'
+'t̓' + [T_S] > 't̕s'
+'K̓' + [T_W] > 'K̕w'
+'K̓' + [SHIFT T_W] > 'K̕W' layer('default')
+'Ḵ̓' + [T_W] > 'Ḵ̕w'
+'Ḵ̓' + [SHIFT T_W] > 'Ḵ̕W' layer('default')
+'T̓' + [T_S] > 'T̕s'
+'T̓' + [SHIFT T_S] > 'T̕S' layer('default')
+'T̓' + [T_R] > 'T̕ł'
+'T̓' + [SHIFT T_R] > 'T̕Ł' layer('default')
+
+c --- END OF TOUCH LAYOUT RULES ---
+                
+c Diacritics
+
+store(underaccent) U+0331
+store(underaccentkey) ";"
+
+store(overaccent) U+0301 U+0313 U+0315
+store(overaccentkey) "^]/"
+
+any(underaccent) + any(underaccentkey) > context beep
+any(overaccent) + any(overaccentkey) > context beep  
+any(underaccent) any(overaccent) + any(underaccentkey) > context beep                                        
+
+c original punctuation
++ [RALT K_PERIOD] > '>'
++ [RALT K_COMMA] > '<'
++ [SHIFT RALT K_BKQUOTE] > '~'
++ [RALT K_BKQUOTE] > '`'
++ [SHIFT RALT K_COLON] > ':'
++ [RALT K_COLON] > ';'
++ [RALT K_SLASH] > '/'
++ [SHIFT RALT K_SLASH] > '/' c added so slash can still be typed while using Google Drive
++ [RALT K_QUOTE] > U+0027
++ [RALT K_BKSLASH] > '\'
++ [SHIFT RALT K_BKSLASH] > '|'
++ [SHIFT RALT K_RBRKT] > '}'
++ [SHIFT RALT K_LBRKT] > '{'
++ [RALT K_RBRKT] > ']'
++ [RALT K_LBRKT] > '['
++ [RALT K_EQUAL] > '+'
++ [RALT K_HYPHEN] > '_' 
+
+c Guillemets
++ [SHIFT RALT K_0] > '›'
++ [SHIFT RALT K_9] > '‹'
++ [RALT K_0] > '»'
++ [RALT K_9] > '«'
+
+c Quotes
++ [SHIFT K_equal] > "”"
++ [SHIFT K_hyphen] > "“"
++ [K_BKQUOTE] > "‘"
++ [shift K_rbrkt] > "’"  
+       
+c Diacritics
+
+ + ";" > "̱"
+ + "^" > "́"
+ + "]" > "̕"
+ + "/" > "̓"
+      
+c Language
+
++ "~" > "·"
+                                             
++ [K_LBRKT] > 'ł'   
++ [shift K_LBRKT] > 'Ł'   
+
+match > use(normalize)
+
+group(normalize)
+
+any(overaccent) any(underaccent) > context(2) context(1)

@@ -1,0 +1,165 @@
+﻿store(&VERSION) '10.0'
+store(&NAME) 'Kannada WinScript (NLCI)'
+store(&COPYRIGHT) '© NLCI Bangalore'
+store(&KEYBOARDVERSION) '2.2'
+store(&TARGETS) 'any'
+store(&BITMAP) 'nlci_kannada_winscript.ico'
+store(&VISUALKEYBOARD) 'nlci_kannada_winscript.kvks'
+store(&LAYOUTFILE) 'nlci_kannada_winscript.keyman-touch-layout'
+begin Unicode > use(main)
+
+group(main) using keys
+
+store(vowelKeys)   'AiIuUReEYoOVMH'
+store(vowels) 'ಆಇಈಉಊಋಎಏಐಒಓಔಂಃ'
+store(vowelMatras) U+0CBE U+0CBF U+0CC0 U+0CC1 U+0CC2 U+0CC3 U+0CC6 U+0CC7 U+0CC8 U+0CCA U+0CCB U+0CCC U+0C82 U+0C83 
+store(consKeys) 'kKgGW' \
+    	   	   	'cCjJw' \
+    	   	   	'tTdDN' \
+    	   	   	'qQ[{n' \
+    	   	   	'pPbBm' \
+    	   	   	'yrlvzZshL'
+
+store(cons) 'ಕಖಗಘಙ' \
+    	   	'ಚಛಜಝಞ' \
+    	   	'ಟಠಡಢಣ' \
+    	   	'ತಥದಧನ' \
+    	   	'ಪಫಬಭಮ' \
+    	   	'ಯರಲವಶಷಸಹಳ'
+
+store(consonants) outs(cons) 'ಱೞ'
+store(allKeys) outs(consKeys) outs(vowelKeys) 'azZ'
+
+c Adjust the behavior of 'a'
++ 'a' > 'ಅ'   
+'ಅ' + 'a' > 'ಆ'               
+any(consonants) + 'a' > context dk(a)
+dk(a) + 'a' > 'ಾ' dk(aa)
+'ಾ' dk(aa) + 'a' > 'ಅ'
+
+c Adjust the behavior of 'e'
+'ಎ' + 'e' > 'ಏ'      
+'ೆ' + 'e' > 'ೇ'  
+
+c Adjust the behavior of 'i'
+'ಇ' + 'i' > 'ಈ' 
+
+c Adjust the behavior of l
+'ಲ' + 'l' > 'ಳ' c U+0CB3 LLA
+'ಳ' + 'l' > 'ೞ' c U+0CDE FA     
+
+c Adjust the behavior of L
+'ಳ' + 'L' > 'ೞ' 
+
+c Adjust the behavior of o
+'ಒ' + 'o' > 'ಓ'    
+'ೊ' + 'o' > 'ೋ'   
+
+c Adjust the behavior of r
+ 'ರ' + 'r' > 'ಱ'       
+ 
+c Adjust the behavior of R
+'ಋ' + 'R' > 'ೠ'   
+'ೃ' + 'R' > 'ೄ'     
+   
+c Adjust the behavior of S
++ 'S' > nul                
+
+c Adjust the behavior of F
++ 'F' > nul  
+'`' dk(bt) + 'F' > 'F'
++ 'f' > nul    
+'`' dk(bt) + 'f' > 'f'
+
+c Adjust the behavior of u
+'ಉ' + 'u' > 'ಊ'    
+
+c Adjust the behavior of s
+'ಸ' + 's'> 'ಶ'    
+
+c Adjust the behavior of S
+'`' dk(bt) + 'S' > 'S'
+
+c Adjust the behavior of X
+any(consonants) + 'X' > context '್' U+200C c ZWNJ
+any(consonants) '್' + 'X' > context U+200C c ZWNJ 
+store(WordFinalPunct) ' ",;:.>!]}-\;/~@#$%^&*(_+|:<?)' 
+U+200C + any(WordFinalPunct) > index(WordFinalPunct, 2)
+  
+c = is a modifier key that alters the default behavior of some keystrokes
++ '=' > '=' dk(eq)
+'=' dk(eq)+ 'r' > 'ಱ'
+'=' dk(eq)+ 'z' > 'ೞ'     
+
+c Restrict the ZW characters 
+U+200C + 'x' > context beep
+U+200D + 'X' > context beep
+U+200C + 'X' > context beep
+U+200D + 'x' > context beep             
+
+c Smart quotes
++ '"' > U+201C
+U+201C + '"' > U+201D
+U+201D + '"' > '"'
+
++ "'" > U+2018
+U+2018 + "'" > U+2019
+U+2019 + "'" > "'"
+
+c Dashes
+'--' + '`' > U+2013 
+U+2013 + '`' > '--' 
+U+2013 + [K_BKSP] > '--'
+'---' + '`' > U+2014
+U+2014 + '`' > '---'
+U+2014 + [K_BKSP] > '---'    
+
+c backtick for change into English
++ '`' > '`' dk(bt)
+'`' dk(bt) + any(allKeys) > index(allKeys, 3)
+any(allKeys) + any(allKeys) > context index(allKeys, 2)
+    
+c numbers
+store(numberKeys) '1234567890'
+store(KannadaNumbers) '೧೨೩೪೫೬೭೮೯೦'
+'`' dk(bt) + any(numberKeys) > index(KannadaNumbers, 3)
+any(KannadaNumbers) + any(numberKeys) > context index(KannadaNumbers, 2)
+
+
++ any(vowelKeys) > index(vowels, 1)
++ any(consKeys) > index(cons, 1)
+any(consonants) + any(vowelKeys) > context index(vowelMatras, 2)
+
+c cons + virama
+any (consonants) + 'x' > context '್'          
+
+c vowels + virama
+any(vowels) + 'x' > context '್' 
+'ಅ' + 'x' > context '್'
+any(vowelMatras) + 'x' > context '್'      
+
+c Vowel sign elongation
+'ಿ' + 'i' > context 'ೀ' 
+'ು' + 'u' > context 'ೂ'
+'ಾ' + 'a' > context 'ಾ'
+
+c Added 2025-May
++ [RALT K_HYPHEN] > U+200C c ZWNJ
++ [RALT K_EQUAL] > U+200D c ZWJ
++ [RALT K_S] > U+0C81 c candrabindu
++ [RALT SHIFT K_S] > U+0C80 c spacing candrabindu
++ [RALT K_QUOTE] > U+0CBD c avagraha
+
++ [SHIFT RALT K_F] > U+0C8C c vocalic l
++ [SHIFT RALT K_R] > U+0CE1 c vocalic ll
++ [RALT K_F] > U+0CE2 c vowel sign vocalic l
++ [RALT K_R] > U+0CE3 c vowel sign vocalic ll
+
++ [K_RBRKT] > U+0CBC c nukta
++ [RALT K_COLON] > U+0CD5 c length mark
+
++ [RALT K_RBRKT] > U+005D
++ [RALT K_LBRKT] > U+005B
+
+
+

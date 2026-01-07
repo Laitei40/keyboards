@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package>
+  <System>
+    <KeymanDeveloperVersion>18.0.238.0</KeymanDeveloperVersion>
+    <FileVersion>7.0</FileVersion>
+  </System>
+  <Options>
+    <ExecuteProgram></ExecuteProgram>
+    <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
+    <MSIFileName></MSIFileName>
+    <MSIOptions></MSIOptions>
+    <FollowKeyboardVersion/>
+  </Options>
+  <StartMenu>
+    <Folder></Folder>
+    <Items/>
+  </StartMenu>
+  <Info>
+    <Version URL=""></Version>
+    <Name URL="">LIBTRALO</Name>
+    <Copyright URL="">© SIL Global</Copyright>
+    <Author URL="mailto:support@keyman.com">support@keyman.com</Author>
+    <Description URL="">The LIBTRALO (Liberian Translation &amp; Literacy Organization) keyboard was
+designed to be used for all Liberian and Sierra Leonean languages.</Description>
+  </Info>
+  <Files>
+    <File>
+      <Name>..\build\libtralo.kmx</Name>
+      <Description>Keyboard LIBTRALO</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kmx</FileType>
+    </File>
+    <File>
+      <Name>readme.htm</Name>
+      <Description>File readme.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>welcome\libtralo.png</Name>
+      <Description>File libtralo.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\welcome.htm</Name>
+      <Description>File welcome.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>..\build\libtralo.js</Name>
+      <Description>File libtralo.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
+    <File>
+      <Name>..\build\libtralo.kvk</Name>
+      <Description>File libtralo.kvk</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kvk</FileType>
+    </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis\Charis-Bold.ttf</Name>
+      <Description>Font Charis Bold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis\Charis-BoldItalic.ttf</Name>
+      <Description>Font Charis Bold Italic</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis\Charis-Italic.ttf</Name>
+      <Description>Font Charis Italic</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis\Charis-Regular.ttf</Name>
+      <Description>Font Charis</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis\Charis_README.txt</Name>
+      <Description>File Charis_README.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis\FONTLOG.txt</Name>
+      <Description>File FONTLOG.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis\OFL-FAQ.txt</Name>
+      <Description>File OFL-FAQ.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis\Charis-Medium.ttf</Name>
+      <Description>Font Charis Medium</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis\Charis-MediumItalic.ttf</Name>
+      <Description>Font Charis Medium Italic</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis\Charis-SemiBold.ttf</Name>
+      <Description>Font Charis SemiBold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis\Charis-SemiBoldItalic.ttf</Name>
+      <Description>Font Charis SemiBold Italic</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis_dan\CharisDan_FONTLOG.txt</Name>
+      <Description>File CharisDan_FONTLOG.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis_dan\CharisDan_README.txt</Name>
+      <Description>File CharisDan_README.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis_dan\CharisDan-Bold.ttf</Name>
+      <Description>Font Charis Dan Bold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis_dan\CharisDan-BoldItalic.ttf</Name>
+      <Description>Font Charis Dan Bold Italic</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis_dan\CharisDan-Italic.ttf</Name>
+      <Description>Font Charis Dan Italic</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis_dan\CharisDan-Medium.ttf</Name>
+      <Description>Font Charis Dan Medium</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis_dan\CharisDan-MediumItalic.ttf</Name>
+      <Description>Font Charis Dan Medium Italic</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis_dan\CharisDan-Regular.ttf</Name>
+      <Description>Font Charis Dan</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis_dan\CharisDan-SemiBold.ttf</Name>
+      <Description>Font Charis Dan SemiBold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis_dan\CharisDan-SemiBoldItalic.ttf</Name>
+      <Description>Font Charis Dan SemiBold Italic</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+  </Files>
+  <Keyboards>
+    <Keyboard>
+      <ID>libtralo</ID>
+      <OSKFont>..\..\..\shared\fonts\sil\charis\Charis-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\sil\charis\Charis-Regular.ttf</DisplayFont>
+      <Languages>
+        <Language ID="bza">Bandi</Language>
+        <Language ID="bsq-Latn">Bassa</Language>
+        <Language ID="oub">Glio-Oubi</Language>
+        <Language ID="gol">Gola</Language>
+        <Language ID="gbo">Northern Grebo</Language>
+        <Language ID="kss">Southern Kisi</Language>
+        <Language ID="klu">Klao</Language>
+        <Language ID="xpe">Liberia Kpelle</Language>
+        <Language ID="kqo">Eastern Krahn</Language>
+        <Language ID="krw">Western Krahn</Language>
+        <Language ID="blh">Kuwaa</Language>
+        <Language ID="lom">Loma (Liberia)</Language>
+        <Language ID="mev">Mano</Language>
+        <Language ID="mzj">Manya</Language>
+        <Language ID="krn">Sapo</Language>
+        <Language ID="buy">Bullom So</Language>
+        <Language ID="kno">Kono (Sierra Leone)</Language>
+        <Language ID="kri">Krio</Language>
+        <Language ID="knk">Kuranko</Language>
+        <Language ID="lia">West-Central Limba</Language>
+        <Language ID="lok">Loko</Language>
+        <Language ID="men">Mende (Sierra Leone)</Language>
+        <Language ID="tem">Timne</Language>
+        <Language ID="vai-Latn">Vai (Latin)</Language>
+        <Language ID="dee">Dewoin</Language>
+        <Language ID="dnj-LR">Dan (Western)</Language>
+        <Language ID="ggb">Gbii</Language>
+        <Language ID="glr">Glaro-Twabo</Language>
+        <Language ID="grb">Grebo</Language>
+        <Language ID="gry">Barclayville Grebo</Language>
+        <Language ID="grv">Central Grebo</Language>
+        <Language ID="gec">Gboloo Grebo</Language>
+        <Language ID="grj">Southern Grebo</Language>
+        <Language ID="kpe">Kpelle</Language>
+        <Language ID="tja">Tajuasohn</Language>
+        <Language ID="bmf">Bom-Kim</Language>
+        <Language ID="bun">Sherbro</Language>
+      </Languages>
+    </Keyboard>
+  </Keyboards>
+  <Strings/>
+</Package>

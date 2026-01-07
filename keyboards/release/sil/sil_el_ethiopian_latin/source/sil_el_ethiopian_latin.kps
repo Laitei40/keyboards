@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package>
+  <System>
+    <KeymanDeveloperVersion>18.0.219.0</KeymanDeveloperVersion>
+    <FileVersion>7.0</FileVersion>
+  </System>
+  <Options>
+    <ExecuteProgram></ExecuteProgram>
+    <ReadMeFile>readme.htm</ReadMeFile>
+    <GraphicFile>sil_el_sideimage.bmp</GraphicFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
+    <MSIFileName></MSIFileName>
+    <MSIOptions></MSIOptions>
+    <FollowKeyboardVersion/>
+  </Options>
+  <StartMenu>
+    <Folder></Folder>
+    <Items/>
+  </StartMenu>
+  <Info>
+    <Version URL=""></Version>
+    <Name URL="">SIL EL - Ethiopian Latin</Name>
+    <Copyright URL="">© SIL Ethiopia</Copyright>
+    <Author URL="mailto:computer_ethiopia@sil.org">SIL Ethiopia</Author>
+    <WebSite URL="http://www.silethiopia.org">www.silethiopia.org</WebSite>
+    <Description URL="">The "SIL EL - Ethiopian Latin" keyboard is intended to support keying a
+number of Ethiopian languages using Latin-based scripts.</Description>
+  </Info>
+  <Files>
+    <File>
+      <Name>..\build\sil_el_ethiopian_latin.kmx</Name>
+      <Description>Keyboard SIL EL - Ethiopian Latin</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kmx</FileType>
+    </File>
+    <File>
+      <Name>welcome\welcome.htm</Name>
+      <Description>File welcome.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>readme.htm</Name>
+      <Description>File readme.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>SIL-EL-Ethiopian-LatinKeyboardMap.pdf</Name>
+      <Description>File SIL-EL-Ethiopian-LatinKeyboardMap.pdf</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.pdf</FileType>
+    </File>
+    <File>
+      <Name>sil_el_sideimage.bmp</Name>
+      <Description>File sil_el_sideimage.bmp</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.bmp</FileType>
+    </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
+    <File>
+      <Name>..\build\sil_el_ethiopian_latin.kvk</Name>
+      <Description>File sil_el_ethiopian_latin.kvk</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kvk</FileType>
+    </File>
+  </Files>
+  <Keyboards>
+    <Keyboard>
+      <Name>SIL EL - Ethiopian Latin</Name>
+      <ID>sil_el_ethiopian_latin</ID>
+      <Version>1.4.4</Version>
+      <Languages>
+        <Language ID="amf">Hamer-Banna</Language>
+        <Language ID="anu-Latn">Anuak</Language>
+        <Language ID="bcq-Latn">Bench</Language>
+        <Language ID="bst-Latn">Basketo</Language>
+        <Language ID="bwo">Boro</Language>
+        <Language ID="gmv-Latn">Gamo</Language>
+        <Language ID="gof-Latn">Gofa</Language>
+        <Language ID="gru-Latn">Kistane</Language>
+        <Language ID="guk">Gumuz</Language>
+        <Language ID="gwd">Gawwada</Language>
+        <Language ID="hdy-Latn">Hadiyya</Language>
+        <Language ID="kbr">Kafa</Language>
+        <Language ID="kmq">Kwama</Language>
+        <Language ID="kqy-Latn">Koorete</Language>
+        <Language ID="ktb-Latn">Kambaata</Language>
+        <Language ID="kxc">Konso</Language>
+        <Language ID="lgn">T'apo</Language>
+        <Language ID="mdx-Latn">Dizin (Latin)</Language>
+        <Language ID="mdy-Latn">Male</Language>
+        <Language ID="moy">Shekkacho</Language>
+        <Language ID="mpe">Majang</Language>
+        <Language ID="muz-Latn">Mursi</Language>
+        <Language ID="myf">Bambassi</Language>
+        <Language ID="mym-Latn">Me'en</Language>
+        <Language ID="nnj">Nyangatom</Language>
+        <Language ID="nus">Nuer</Language>
+        <Language ID="she">Sheko</Language>
+        <Language ID="sid">Sidamo</Language>
+        <Language ID="so">Somali</Language>
+        <Language ID="ssy">Saho</Language>
+        <Language ID="suq">Suri</Language>
+        <Language ID="tsb">Tsamai</Language>
+        <Language ID="wal-Latn">Wolaytta</Language>
+        <Language ID="wti">Berta</Language>
+        <Language ID="xom">Komo</Language>
+        <Language ID="zay">Zayse</Language>
+      </Languages>
+    </Keyboard>
+  </Keyboards>
+  <Strings/>
+</Package>

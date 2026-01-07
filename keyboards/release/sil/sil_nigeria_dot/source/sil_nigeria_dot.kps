@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package>
+  <System>
+    <KeymanDeveloperVersion>17.0.329.0</KeymanDeveloperVersion>
+    <FileVersion>7.0</FileVersion>
+  </System>
+  <Options>
+    <ExecuteProgram></ExecuteProgram>
+    <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
+    <MSIFileName></MSIFileName>
+    <MSIOptions></MSIOptions>
+    <FollowKeyboardVersion/>
+  </Options>
+  <StartMenu>
+    <Folder></Folder>
+    <Items/>
+  </StartMenu>
+  <Info>
+    <Version URL=""></Version>
+    <Name URL="">Nigeria Dot (SIL)</Name>
+    <Copyright URL="">(c) SIL International</Copyright>
+    <Description URL="">This keyboard pairs with two other keyboards to cover the expected needs
+of most of Nigeria\'s languages. The three keyboards are identical
+except that the vowels are treated differently. The vowels on this
+keyboard can have a dot below them as well as the standard tone
+markings. The keyboard also includes standard hook (implosives),
+nasality, tone, and the Naira sign.</Description>
+    <Author URL="">Heidi Rosendall</Author>
+  </Info>
+  <Files>
+    <File>
+      <Name>welcome\style.css</Name>
+      <Description>File style.css</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.css</FileType>
+    </File>
+    <File>
+      <Name>welcome\welcome.htm</Name>
+      <Description>File welcome.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>readme.htm</Name>
+      <Description>File readme.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>..\build\sil_nigeria_dot.kvk</Name>
+      <Description>File sil_nigeria_dot.kvk</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kvk</FileType>
+    </File>
+    <File>
+      <Name>..\build\sil_nigeria_dot.kmx</Name>
+      <Description>Keyboard Nigeria Dot (SIL)</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kmx</FileType>
+    </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
+  </Files>
+  <Keyboards>
+    <Keyboard>
+      <Name>Nigeria Dot (SIL)</Name>
+      <ID>sil_nigeria_dot</ID>
+      <Version>1.6</Version>
+      <Languages>
+        <Language ID="anc">Ngas</Language>
+        <Language ID="ann">Obolo</Language>
+        <Language ID="atg">Ivbie North-Okpela-Arhe</Language>
+        <Language ID="bom">Berom</Language>
+        <Language ID="bzw">Basa (Nigeria)</Language>
+        <Language ID="enn">Engenni</Language>
+        <Language ID="gkn">Gokana</Language>
+        <Language ID="ig">Igbo</Language>
+        <Language ID="igb">Ebira</Language>
+        <Language ID="ige">Igede</Language>
+        <Language ID="ikw">Ikwere</Language>
+        <Language ID="jbu">Jukun Takum</Language>
+        <Language ID="yaz">Lokaa </Language>
+      </Languages>
+    </Keyboard>
+  </Keyboards>
+  <RelatedPackages>
+    <RelatedPackage ID="nigeria unicode dots" Relationship="deprecates"/>
+  </RelatedPackages>
+  <Strings/>
+</Package>

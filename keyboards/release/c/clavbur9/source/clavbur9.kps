@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package>
+  <System>
+    <KeymanDeveloperVersion>18.0.238.0</KeymanDeveloperVersion>
+    <FileVersion>7.0</FileVersion>
+  </System>
+  <Options>
+    <ExecuteProgram></ExecuteProgram>
+    <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
+    <MSIFileName></MSIFileName>
+    <MSIOptions></MSIOptions>
+    <FollowKeyboardVersion/>
+  </Options>
+  <StartMenu>
+    <Folder></Folder>
+    <Items/>
+  </StartMenu>
+  <Info>
+    <Version URL=""></Version>
+    <Name URL="">Clavier du Burkina</Name>
+    <Copyright URL="">© SIL Burkina Faso</Copyright>
+    <WebSite URL="https://keyman.com/keyboards/clavbur9">https://keyman.com/keyboards/clavbur9</WebSite>
+    <Description URL="">Unicode keyboard to type all special characters needed for the languages
+of Burkina Faso on both AZERTY or QWERTY keyboards. Clavier pour taper
+toutes les caractères speciaux au Burkina Faso, soit sur le clavier
+AZERTY ou le clavier QWERTY.</Description>
+  </Info>
+  <Files>
+    <File>
+      <Name>welcome\style.css</Name>
+      <Description>File style.css</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.css</FileType>
+    </File>
+    <File>
+      <Name>welcome\welcome.htm</Name>
+      <Description>File welcome.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>readme.htm</Name>
+      <Description>File readme.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>..\build\clavbur9.js</Name>
+      <Description>File clavbur9.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
+    <File>
+      <Name>..\build\clavbur9.kvk</Name>
+      <Description>File clavbur9.kvk</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kvk</FileType>
+    </File>
+    <File>
+      <Name>..\build\clavbur9.kmx</Name>
+      <Description>Keyboard Clavier du Burkina</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kmx</FileType>
+    </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis\Charis-Bold.ttf</Name>
+      <Description>Font Charis Bold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis\Charis-BoldItalic.ttf</Name>
+      <Description>Font Charis Bold Italic</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis\Charis-Italic.ttf</Name>
+      <Description>Font Charis Italic</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis\Charis-Medium.ttf</Name>
+      <Description>Font Charis Medium</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis\Charis-MediumItalic.ttf</Name>
+      <Description>Font Charis Medium Italic</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis\Charis-Regular.ttf</Name>
+      <Description>Font Charis</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis\Charis-SemiBold.ttf</Name>
+      <Description>Font Charis SemiBold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis\Charis-SemiBoldItalic.ttf</Name>
+      <Description>Font Charis SemiBold Italic</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis\Charis_README.txt</Name>
+      <Description>File Charis_README.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis\FONTLOG.txt</Name>
+      <Description>File FONTLOG.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis\OFL-FAQ.txt</Name>
+      <Description>File OFL-FAQ.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+  </Files>
+  <Keyboards>
+    <Keyboard>
+      <ID>clavbur9</ID>
+      <OSKFont>..\..\..\shared\fonts\sil\charis\Charis-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\sil\charis\Charis-Regular.ttf</DisplayFont>
+      <Languages>
+        <Language ID="bm">Bambara</Language>
+        <Language ID="bbo">Northern Bobo Madaré</Language>
+        <Language ID="beh">Biali</Language>
+        <Language ID="bfo">Malba Birifor</Language>
+        <Language ID="bib">Bissa</Language>
+        <Language ID="bmq">Bomu</Language>
+        <Language ID="bof">Bolon</Language>
+        <Language ID="box">Buamu</Language>
+        <Language ID="bwj">Láá Láá Bwamu</Language>
+        <Language ID="bwq">Southern Bobo Madaré</Language>
+        <Language ID="bwy">Cwi Bwamu</Language>
+        <Language ID="bxl">Jalkunan</Language>
+        <Language ID="cme">Cerma</Language>
+        <Language ID="dgd">Northern Dagara</Language>
+        <Language ID="dgs">Dogoso</Language>
+        <Language ID="dje">Zarma</Language>
+        <Language ID="djm">Jamsay Dogon</Language>
+        <Language ID="dnn">Dzùùngoo</Language>
+        <Language ID="dtm">Tomo Kan Dogon</Language>
+        <Language ID="dts">Toro So Dogon</Language>
+        <Language ID="dya">Dyan</Language>
+        <Language ID="dyu">Dyula</Language>
+        <Language ID="fuh">Western Niger Fulfulde</Language>
+        <Language ID="fuv">Nigerian Fulfulde</Language>
+        <Language ID="gna">Kaansa</Language>
+        <Language ID="gux">Gourmanchéma</Language>
+        <Language ID="ha">Hausa</Language>
+        <Language ID="hmb">Humburi Senni Songhay</Language>
+        <Language ID="jow">Jowulu</Language>
+        <Language ID="mos">Mossi</Language>
+        <Language ID="pug">Phuie</Language>
+        <Language ID="taq">Tamasheq</Language>
+        <Language ID="xsm">Kasem</Language>
+      </Languages>
+    </Keyboard>
+  </Keyboards>
+  <RelatedPackages>
+    <RelatedPackage ID="clavier du burkina" Relationship="deprecates"/>
+  </RelatedPackages>
+  <Strings/>
+</Package>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package>
+  <System>
+    <KeymanDeveloperVersion>17.0.335.0</KeymanDeveloperVersion>
+    <FileVersion>7.0</FileVersion>
+  </System>
+  <Options>
+    <ExecuteProgram></ExecuteProgram>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <MSIFileName></MSIFileName>
+    <MSIOptions></MSIOptions>
+    <FollowKeyboardVersion/>
+  </Options>
+  <StartMenu>
+    <Folder></Folder>
+    <Items/>
+  </StartMenu>
+  <Info>
+    <Version URL=""></Version>
+    <Name URL="">Qaniujaaqpait | ᖃᓂᐅᔮᖅᐸᐃᑦ</Name>
+    <Copyright URL="">© Pirurvik Center and SIL Global</Copyright>
+    <Description URL="">A Canadian Aboriginal Syllabics script keyboard for Inuktut languages.</Description>
+  </Info>
+  <Files>
+    <File>
+      <Name>..\build\inuktitut_naqittaut.kvk</Name>
+      <Description>File inuktitut_naqittaut.kvk</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kvk</FileType>
+    </File>
+    <File>
+      <Name>..\build\inuktitut_naqittaut.kmx</Name>
+      <Description>Keyboard Qaniujaaqpait | ᖃᓂᐅᔮᖅᐸᐃᑦ</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kmx</FileType>
+    </File>
+    <File>
+      <Name>..\build\inuktitut_naqittaut.js</Name>
+      <Description>File inuktitut_naqittaut.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\canadian_aboriginal\AboriginalSerifREGULAR.ttf</Name>
+      <Description>File AboriginalSerifREGULAR.ttf</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
+  </Files>
+  <Keyboards>
+    <Keyboard>
+      <Name>Qaniujaaqpait | ᖃᓂᐅᔮᖅᐸᐃᑦ</Name>
+      <ID>inuktitut_naqittaut</ID>
+      <Version>1.6.1</Version>
+      <OSKFont>..\..\..\shared\fonts\canadian_aboriginal\AboriginalSerifREGULAR.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\canadian_aboriginal\AboriginalSerifREGULAR.ttf</DisplayFont>
+      <Languages>
+        <Language ID="ike-Cans">Eastern Canadian Inuktitut (Unified Canadian Aboriginal Syllabics)</Language>
+      </Languages>
+    </Keyboard>
+  </Keyboards>
+  <Strings/>
+</Package>

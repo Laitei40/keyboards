@@ -1,0 +1,241 @@
+﻿store(&VERSION) "10.0"
+store(&KEYBOARDVERSION) '9.2'
+store(&TARGETS) "any"
+c store(&ETHNOLOGUECODE) "noo"
+store(&COPYRIGHT) '(c) 2008-2024 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey'
+store(&NAME) 'nuučaan̓uł'
+store(&BITMAP) 'fv_nuucaanul.ico'
+store(&VISUALKEYBOARD) 'fv_nuucaanul.kvks'
+
+begin Unicode > use(main)
+
+group(main) using keys
+
+
+c --- START OF TOUCH LAYOUT RULES ---
+
+c Touch layout rules originally imported from KeyMap.plist on Tue Nov 17 2015
+
+store(&LAYOUTFILE) 'fv_nuucaanul.keyman-touch-layout'
+
+store(NeedsCombAComma) 'cčkmnpqtwyƛCČKMNPQTWY'
+store(CombAComma) [T_R] [SHIFT T_R] [K_QUOTE]
+
+any(NeedsCombAComma) + any(CombAComma) > index(NeedsCombAComma,1) U+0313
+
+
++ [SHIFT T_Q_0] > 'Q̓' layer('default')
++ [SHIFT T_Q] > 'Q' layer('default')
++ [SHIFT T_W_0] > 'W̓' layer('default')
++ [SHIFT T_W] > 'W' layer('default')
++ [SHIFT T_E] > 'E' layer('default')
++ [SHIFT T_T_0] > 'T̓' layer('default')
++ [SHIFT T_T] > 'T' layer('default')
++ [SHIFT T_Y_0] > 'Y̓' layer('default')
++ [SHIFT T_Y] > 'Y' layer('default')
++ [SHIFT T_U] > 'U' layer('default')
++ [SHIFT T_I] > 'I' layer('default')
++ [SHIFT T_O] > 'O' layer('default')
++ [SHIFT T_P_0] > 'P̓' layer('default')
++ [SHIFT T_P] > 'P' layer('default')
++ [SHIFT T_A] > 'A' layer('default')
++ [SHIFT T_S] > 'S' layer('default')
++ [SHIFT T_D] > 'Š' layer('default')
++ [SHIFT T_F] > 'ʔ' layer('default')
++ [SHIFT T_G] > 'ʕ' layer('default')
++ [SHIFT T_H] > 'H' layer('default')
++ [SHIFT T_J] > 'ᵂ' layer('default')
++ [SHIFT T_K_0] > 'K̓' layer('default')
++ [SHIFT T_K] > 'K' layer('default')
++ [SHIFT T_L] > 'Ł' layer('default')
++ [SHIFT T_COLON] > 'Ḥ' layer('default')
++ [SHIFT T_Z] > 'X̣' layer('default')
++ [SHIFT T_X] > 'X' layer('default')
++ [SHIFT T_C_0] > 'C̓' layer('default')
++ [SHIFT T_C] > 'C' layer('default')
++ [SHIFT T_V_0] > 'Č̓' layer('default')
++ [SHIFT T_V] > 'Č' layer('default')
++ [SHIFT T_B_0] > 'ƛ̓' layer('default') c see TODO
++ [SHIFT T_B] > 'ƛ' layer('default')
++ [SHIFT T_N_0] > 'N̓' layer('default')
++ [SHIFT T_N_1] > 'Ŋ' layer('default')
++ [SHIFT T_N] > 'N' layer('default')
++ [SHIFT T_M_0] > 'M̓' layer('default')
++ [SHIFT T_M] > 'M' layer('default')
++ [T_Q_0] > 'q̓'
++ [T_Q] > 'q'
++ [T_W_0] > 'w̓'
++ [T_W] > 'w'
++ [T_E] > 'e'
++ [T_T_0] > 't̓'
++ [T_T] > 't'
++ [T_Y_0] > 'y̓'
++ [T_Y] > 'y'
++ [T_U] > 'u'
++ [T_I] > 'i'
++ [T_O] > 'o'
++ [T_P_0] > 'p̓'
++ [T_P] > 'p'
++ [T_A] > 'a'
++ [T_S] > 's'
++ [T_D] > 'š'
++ [T_F] > 'ʔ'
++ [T_G] > 'ʕ'
++ [T_H] > 'h'
++ [T_J] > 'ʷ'
++ [T_K_0] > 'k̓'
++ [T_K] > 'k'
++ [T_L] > 'ł'
++ [T_COLON] > 'ḥ'
++ [T_Z] > 'x̣'
++ [T_X] > 'x'
++ [T_C_0] > 'c̓'
++ [T_C] > 'c'
++ [T_V_0] > 'č̓'
++ [T_V] > 'č'
++ [T_B_0] > 'ƛ̓'
++ [T_B] > 'ƛ'
++ [T_N_0] > 'n̓'
++ [T_N_1] > 'ŋ'
++ [T_N] > 'n'
++ [T_M_0] > 'm̓'
++ [T_M] > 'm'
+
+c --- END OF TOUCH LAYOUT RULES ---
+
+c constraints
+
+store(underaccent)  U+0323 
+store(underaccentkey) [K_1] 
+
+store(overaccent)  U+0313
+store(overaccentkey) [K_QUOTE]
+
+any(underaccent) + any(underaccentkey) > context beep
+any(overaccent) + any(overaccentkey) > context beep  
+any(underaccent) any(overaccent) + any(underaccentkey) > context beep
+
+store(accentkey) [K_QUOTE] [K_1] 
+store(NumbersAndPunctuation) '1234567890-=[]\;,./`~!@#$%^&*()_+{}|:"<>?‘’“”‹›«»' "'"  c preventing accents on non-letters
+any(NumbersAndPunctuation) + any(accentkey) > context beep
+
+store(HNeedsUnderdot) 'hH'
+store(HUnderdot) 'ḥḤ'
+store(Underdot) [K_1]
+
+any(HNeedsUnderdot) + any(Underdot) > index(HUnderdot,1)
+any(HUnderdot) + any(overaccentkey) > context beep
+any(HUnderdot) + any(underaccentkey) > context beep
+
+
+c original punctuation
+
++ [SHIFT RALT K_RBRKT] > '}'
++ [SHIFT RALT K_LBRKT] > '{'
++ [RALT K_LBRKT] > '['
++ [RALT K_RBRKT] > ']'
++ [NCAPS SHIFT RALT K_0] > ')'
++ [NCAPS SHIFT RALT K_9] > '('
++ [NCAPS SHIFT RALT K_8] > '*'
++ [NCAPS SHIFT RALT K_7] > '&'
++ [NCAPS SHIFT RALT K_6] > '^'
++ [NCAPS SHIFT RALT K_5] > '%'
++ [NCAPS SHIFT RALT K_4] > '$'
++ [NCAPS SHIFT RALT K_3] > '#'
++ [NCAPS SHIFT RALT K_2] > '@'
++ [SHIFT RALT K_1] > '!'
++ [NCAPS RALT K_0] > '0'
++ [NCAPS RALT K_9] > '9'
++ [NCAPS RALT K_8] > '8'
++ [NCAPS RALT K_7] > '7'
++ [NCAPS RALT K_6] > '6'
++ [NCAPS RALT K_5] > '5'
++ [NCAPS RALT K_4] > '4'
++ [NCAPS RALT K_3] > '3'
++ [NCAPS RALT K_2] > '2'
++ [RALT K_1] > '1'
++ [RALT K_QUOTE] > U+0027  
+
+c Alted Characters
+
++ [CAPS SHIFT RALT K_N] > 'ŋ'  
++ [NCAPS SHIFT RALT K_N] > 'Ŋ'  
++ [CAPS RALT K_N] > 'Ŋ'
++ [NCAPS RALT K_N] > 'ŋ'        
+
++ [CAPS SHIFT RALT K_E] > 'ə'  
++ [NCAPS SHIFT RALT K_E] > 'Ə'  
++ [CAPS RALT K_E] > 'Ə'
++ [NCAPS RALT K_E] > 'ə'      
+
++ [CAPS SHIFT RALT K_L] > 'ɫ'  
++ [NCAPS SHIFT RALT K_L] >"Ɫ"
++ [CAPS RALT K_L] > "Ɫ"
++ [NCAPS RALT K_L] > 'ɫ'   
+
+c Quotes
+
++ [SHIFT K_RBRKT] > "”"
++ [SHIFT K_LBRKT] > "“"    
++ [K_RBRKT] > "’"
++ [K_LBRKT] > "‘"
++ [SHIFT RALT K_EQUAL] > '›'
++ [SHIFT RALT K_HYPHEN] > '‹'
++ [RALT K_EQUAL] > '»'
++ [RALT K_HYPHEN] > '«'
+
+c Diacritics
+
++ [K_QUOTE] > U+0313  c apostrophe accent   
++ [K_1] > U+0323   c underdot accent
+             
+c Special Characters
+
++ [CAPS K_8] > 'Ł'
++ [CAPS K_7] > 'Ḥ'
++ [CAPS K_6] > 'X̣'
++ [CAPS K_5] > U+A7DC c see TODO
++ [CAPS K_4] > 'Č'
++ [CAPS K_3] > 'Š'
++ [CAPS K_2] > 'ᵂ' 
+
++ [NCAPS SHIFT K_8] > 'Ł'
++ [NCAPS SHIFT K_7] > 'Ḥ'
++ [NCAPS SHIFT K_6] > 'X̣'
++ [NCAPS SHIFT K_5] > U+A7DC c see TODO
++ [NCAPS SHIFT K_4] > 'Č'
++ [NCAPS SHIFT K_3] > 'Š'
++ [NCAPS SHIFT K_2] > 'ᵂ' 
+
++ [CAPS K_0] > 'ʕ'
++ [CAPS K_9] > 'ʔ'
++ [CAPS SHIFT K_8] > 'ł'
++ [CAPS SHIFT K_7] > 'ḥ'
++ [CAPS SHIFT K_6] > 'x̣'
++ [CAPS SHIFT K_5] > 'ƛ'
++ [CAPS SHIFT K_4] > 'č'
++ [CAPS SHIFT K_3] > 'š'
++ [CAPS SHIFT K_2] > 'ʷ'
+
+
++ [NCAPS K_0] > 'ʕ'
++ [NCAPS K_9] > 'ʔ'
++ [NCAPS K_8] > 'ł'
++ [NCAPS K_7] > 'ḥ'
++ [NCAPS K_6] > 'x̣'
++ [NCAPS K_5] > 'ƛ'
++ [NCAPS K_4] > 'č'
++ [NCAPS K_3] > 'š'
++ [NCAPS K_2] > 'ʷ'
+
+                                  
+
+match > use(normalize)
+nomatch > use(x)
+
+group(normalize)
+
+any(overaccent) any(underaccent) > context(2) context(1)
+
+
+group(x) using keys

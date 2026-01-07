@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package>
+  <System>
+    <KeymanDeveloperVersion>18.0.238.0</KeymanDeveloperVersion>
+    <FileVersion>7.0</FileVersion>
+  </System>
+  <Options>
+    <ExecuteProgram></ExecuteProgram>
+    <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
+    <MSIFileName></MSIFileName>
+    <MSIOptions></MSIOptions>
+    <FollowKeyboardVersion/>
+  </Options>
+  <StartMenu>
+    <Folder></Folder>
+    <Items/>
+  </StartMenu>
+  <Info>
+    <Version URL=""></Version>
+    <Name URL="">Clavier du Mali (Qwerty)</Name>
+    <Copyright URL="">© SIL Mali</Copyright>
+    <Description URL="">Clavier Unicode pour taper sur un clavier QWERTY tous les caractères
+speciaux utilisés dans les langues du Mali. Cependant, tous les \_autres
+symboles importants\_ ne sont pas pris en charge. Unicode keyboard to
+type all special characters needed for the languages of Mali on a QWERTY
+keyboard. This keyboard also has a mobile phone layout. However, not all
+of the \_Other Important Symbols\_ are supported.</Description>
+  </Info>
+  <Files>
+    <File>
+      <Name>welcome\welcome.htm</Name>
+      <Description>File welcome.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>readme.htm</Name>
+      <Description>File readme.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>..\build\sil_mali_qwerty.kvk</Name>
+      <Description>File sil_mali_qwerty.kvk</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kvk</FileType>
+    </File>
+    <File>
+      <Name>..\build\sil_mali_qwerty.kmx</Name>
+      <Description>Keyboard Clavier du Mali (Qwerty)</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kmx</FileType>
+    </File>
+    <File>
+      <Name>..\build\sil_mali_qwerty.js</Name>
+      <Description>File sil_mali_qwerty.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis_mali\CharisMali-Bold.ttf</Name>
+      <Description>Font Charis Mali Bold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis_mali\CharisMali-BoldItalic.ttf</Name>
+      <Description>Font Charis Mali Bold Italic</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis_mali\CharisMali-Italic.ttf</Name>
+      <Description>Font Charis Mali Italic</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis_mali\CharisMali-Regular.ttf</Name>
+      <Description>Font Charis Mali</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis_mali\FONTLOG.txt</Name>
+      <Description>File FONTLOG.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis_mali\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis_mali\OFL-FAQ.txt</Name>
+      <Description>File OFL-FAQ.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>welcome\mali_all.png</Name>
+      <Description>File mali_all.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\mali_shift.png</Name>
+      <Description>File mali_shift.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\TableauTouchesQWertybw.pdf</Name>
+      <Description>File TableauTouchesQWertybw.pdf</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.pdf</FileType>
+    </File>
+    <File>
+      <Name>welcome\TableauTouchesQWertyCouleur.pdf</Name>
+      <Description>File TableauTouchesQWertyCouleur.pdf</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.pdf</FileType>
+    </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis_mali\CharisMali_README.txt</Name>
+      <Description>File CharisMali_README.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis_mali\CharisMali-Medium.ttf</Name>
+      <Description>Font Charis Mali Medium</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis_mali\CharisMali-MediumItalic.ttf</Name>
+      <Description>Font Charis Mali Medium Italic</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis_mali\CharisMali-SemiBold.ttf</Name>
+      <Description>Font Charis Mali SemiBold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis_mali\CharisMali-SemiBoldItalic.ttf</Name>
+      <Description>Font Charis Mali SemiBold Italic</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+  </Files>
+  <Keyboards>
+    <Keyboard>
+      <ID>sil_mali_qwerty</ID>
+      <OSKFont>..\..\..\shared\fonts\sil\charis_mali\CharisMali-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\sil\charis_mali\CharisMali-Regular.ttf</DisplayFont>
+      <Languages>
+        <Language ID="bbo">Northern Bobo Madaré</Language>
+        <Language ID="bm">Bamanankan</Language>
+        <Language ID="bmq">Bomu</Language>
+        <Language ID="boo">Tiemacèwè Bozo</Language>
+        <Language ID="boz">Bozo, Tieyaxo</Language>
+        <Language ID="bze">Bozo, Jenaama</Language>
+        <Language ID="bzx">Kɛlɛngaxo Bozo</Language>
+        <Language ID="dba">Bangime</Language>
+        <Language ID="dbu">Bondum Dom Dogon</Language>
+        <Language ID="dds">Dogon, Donno So</Language>
+        <Language ID="djm">Jamsay Dogon</Language>
+        <Language ID="dsq">Tadaksahak</Language>
+        <Language ID="dtk">Tene Kan Dogon</Language>
+        <Language ID="dtm">Dogon, Tomo Kan</Language>
+        <Language ID="dts">Dogon, Toro So</Language>
+        <Language ID="dtt">Toro Tegu Dogon</Language>
+        <Language ID="dux">Duungooma</Language>
+        <Language ID="emk">Eastern Maninkakan</Language>
+        <Language ID="ff">Fulah</Language>
+        <Language ID="ffm">Fulfulde, Maasina</Language>
+        <Language ID="fuc">Pulaar</Language>
+        <Language ID="fuf">Pular</Language>
+        <Language ID="fuh">Western Niger Fulfulde</Language>
+        <Language ID="hmb">Songhay, Humburi Senni</Language>
+        <Language ID="jow">Jowulu</Language>
+        <Language ID="kao">Xaasongaxango</Language>
+        <Language ID="khq">Songhay, Koyra Chiini</Language>
+        <Language ID="man">Mandingo</Language>
+        <Language ID="mlq">Western Maninkakan</Language>
+        <Language ID="mwk">Maninkakan, Kita</Language>
+        <Language ID="myk">Sénoufo, Mamara</Language>
+        <Language ID="seb">Shempire Senoufo</Language>
+        <Language ID="ses">Songhay, Koyraboro Senni</Language>
+        <Language ID="shz">Sénoufo, Syenara</Language>
+        <Language ID="snk">Soninke</Language>
+        <Language ID="spp">Sénoufo, Supyire</Language>
+        <Language ID="taq">Tamasheq</Language>
+        <Language ID="tmh">Tamashek</Language>
+        <Language ID="ttq">Tawallammat Tamajaq</Language>
+      </Languages>
+    </Keyboard>
+  </Keyboards>
+  <RelatedPackages>
+    <RelatedPackage ID="maliqwerty" Relationship="deprecates"/>
+    <RelatedPackage ID="sil_mali_qwertz"/>
+    <RelatedPackage ID="sil_mali_azerty"/>
+  </RelatedPackages>
+  <Strings/>
+</Package>

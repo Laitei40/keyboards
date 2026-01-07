@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package>
+  <System>
+    <KeymanDeveloperVersion>17.0.329.0</KeymanDeveloperVersion>
+    <FileVersion>7.0</FileVersion>
+  </System>
+  <Options>
+    <ExecuteProgram></ExecuteProgram>
+    <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
+    <MSIFileName></MSIFileName>
+    <MSIOptions></MSIOptions>
+    <FollowKeyboardVersion/>
+  </Options>
+  <StartMenu>
+    <Folder></Folder>
+    <Items/>
+  </StartMenu>
+  <Info>
+    <Version URL=""></Version>
+    <Name URL="">Nigeria Underline (SIL)</Name>
+    <Copyright URL="">(c) SIL International</Copyright>
+    <Description URL="">This keyboard pairs with two other keyboards to cover the expected needs
+of most of Nigeria\'s languages. The three keyboards are identical
+except that the vowels are treated differently. The vowels on this
+keyboard can have an underline below them as well as the standard tone
+markings. The keyboard also includes standard hook (implosives),
+nasality, tone, and the Naira sign.</Description>
+    <Author URL="">Heidi Rosendall</Author>
+  </Info>
+  <Files>
+    <File>
+      <Name>welcome\style.css</Name>
+      <Description>File style.css</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.css</FileType>
+    </File>
+    <File>
+      <Name>welcome\welcome.htm</Name>
+      <Description>File welcome.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>readme.htm</Name>
+      <Description>File readme.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>..\build\sil_nigeria_underline.kvk</Name>
+      <Description>File sil_nigeria_underline.kvk</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kvk</FileType>
+    </File>
+    <File>
+      <Name>..\build\sil_nigeria_underline.kmx</Name>
+      <Description>Keyboard Nigeria Underline (SIL)</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kmx</FileType>
+    </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
+  </Files>
+  <Keyboards>
+    <Keyboard>
+      <Name>Nigeria Underline (SIL)</Name>
+      <ID>sil_nigeria_underline</ID>
+      <Version>1.6</Version>
+      <Languages>
+        <Language ID="ank">Goemai</Language>
+        <Language ID="bys">Burak</Language>
+        <Language ID="iri">Irigwe</Language>
+        <Language ID="kad">Adara</Language>
+        <Language ID="kaj">Jju</Language>
+        <Language ID="kcg">Tyap</Language>
+        <Language ID="kdl">Tsikimba</Language>
+        <Language ID="ldb">Dũya</Language>
+        <Language ID="lnu">Longuda</Language>
+        <Language ID="tiv">Tiv</Language>
+      </Languages>
+    </Keyboard>
+  </Keyboards>
+  <RelatedPackages>
+    <RelatedPackage ID="nigeria unicode underline" Relationship="deprecates"/>
+  </RelatedPackages>
+  <Strings/>
+</Package>

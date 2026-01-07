@@ -1,0 +1,25 @@
+# Galaxie Hebrew (Mnemonic) Keyboard Change History
+
+## 3.3.1 (30 Oct 2024)
+* Change to use KbdHebr display font for better OSK display
+
+## 3.3 (19 Sep 2024)
+* Changed targets
+
+## 3.2.2 (8 Feb 2021)
+* Remove web and macos from supported platforms
+
+## 3.2 (24 Aug 2018)
+
+* Source migrated to GitHub
+
+## 3.1 (24 May 2012)
+
+* Added to Hebrew keyboard Latin output and Ctrl+Space (to prevent word-final form). 
+* Amended Hebrew help.
+
+## 3.0 (23 Aug 2011)
+
+* Optimised for multiple European hardware layouts.
+
+## 2.0 (24 Oct 2007)

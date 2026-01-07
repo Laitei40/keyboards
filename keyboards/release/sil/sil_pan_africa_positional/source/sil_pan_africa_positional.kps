@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package>
+  <System>
+    <KeymanDeveloperVersion>17.0.330.0</KeymanDeveloperVersion>
+    <FileVersion>7.0</FileVersion>
+  </System>
+  <Options>
+    <ExecuteProgram></ExecuteProgram>
+    <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
+    <MSIFileName></MSIFileName>
+    <MSIOptions></MSIOptions>
+    <FollowKeyboardVersion/>
+  </Options>
+  <StartMenu>
+    <Folder></Folder>
+    <Items/>
+  </StartMenu>
+  <Info>
+    <Name URL="">Pan Africa Positional (SIL)</Name>
+    <Version URL=""></Version>
+    <Copyright URL="">© SIL Global</Copyright>
+    <Description URL="">This is the positional version of the Pan Africa (SIL) keyboard. This is
+the positional version of the Pan Africa (SIL) keyboard. The keyboard
+layout was designed to work with a QWERTY US English keyboard. For a
+keyboard that is not dependent on a particular hardware keyboard, use
+\'Pan Africa Mnemonic (SIL).\' This keyboard was developed to type the
+Latin-script languages of Africa. An attempt was made to cover the
+orthographic needs for SIL in many of the countries of Africa, but this
+cannot be considered a complete list, nor should it be considered an
+endorsement for this particular layout. Known Issues: A few of the
+virtual keys in this keyboard, such as \'RALT O\' may be used by other
+applications, and you may not be able to use that keystroke. In those
+cases, use the alternate keystroke (in this case \'\[O\' ).</Description>
+    <Author URL="">Lorna Evans</Author>
+  </Info>
+  <Files>
+    <File>
+      <Name>readme.htm</Name>
+      <Description>File readme.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>welcome\style.css</Name>
+      <Description>File style.css</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.css</FileType>
+    </File>
+    <File>
+      <Name>welcome\welcome.htm</Name>
+      <Description>File welcome.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>..\build\sil_pan_africa_positional.kvk</Name>
+      <Description>File sil_pan_africa_positional.kvk</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kvk</FileType>
+    </File>
+    <File>
+      <Name>..\build\sil_pan_africa_positional.kmx</Name>
+      <Description>Keyboard Pan Africa Positional (SIL)</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kmx</FileType>
+    </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
+  </Files>
+  <Keyboards>
+    <Keyboard>
+      <Name>Pan Africa Positional (SIL)</Name>
+      <ID>sil_pan_africa_positional</ID>
+      <Version>1.2.1</Version>
+      <Languages>
+        <Language ID="bjt">Balanta-Ganja</Language>
+        <Language ID="bin">Bini</Language>
+        <Language ID="efi">Efik</Language>
+        <Language ID="ee">Ewe</Language>
+        <Language ID="fon">Fon</Language>
+        <Language ID="ff">Fulah</Language>
+        <Language ID="fub-Latn">Adamawa Fulfulde (Latin)</Language>
+        <Language ID="fue">Borgu Fulfulde</Language>
+        <Language ID="fuh">Western Niger Fulfulde</Language>
+        <Language ID="ha">Hausa</Language>
+        <Language ID="idu">Idoma</Language>
+        <Language ID="ig">Igbo</Language>
+        <Language ID="dyu">Dyula</Language>
+        <Language ID="kbp">Kabiyè</Language>
+        <Language ID="kr">Kanuri</Language>
+        <Language ID="knc">Central Kanuri</Language>
+        <Language ID="mnk">Mandinka</Language>
+        <Language ID="mfv">Mandjak</Language>
+        <Language ID="knf">Mankanya</Language>
+        <Language ID="mos">Mossi</Language>
+        <Language ID="snf">Noon</Language>
+        <Language ID="wes">Cameroon Pidgin</Language>
+        <Language ID="fuc">Pulaar</Language>
+        <Language ID="srr">Serer</Language>
+        <Language ID="snk">Soninke</Language>
+        <Language ID="wo">Wolof</Language>
+        <Language ID="yo">Yoruba</Language>
+      </Languages>
+    </Keyboard>
+  </Keyboards>
+  <RelatedPackages>
+    <RelatedPackage ID="africaus" Relationship="deprecates"/>
+  </RelatedPackages>
+  <Strings/>
+</Package>

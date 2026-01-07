@@ -1,0 +1,26 @@
+புதிய தட்டெழுதி | New Typewriter Change History
+====================
+
+2.2.1 (2025-02-20)
+-----------------
+* Put OSKFont from .kps file into .kvks file
+
+2.2 (2024-09-04)
+----------------
+* Add tablet layout
+
+2.1 (2020-05-04)
+----------------
+* Move source from internal repo to release
+
+2.0 (2009-09-10)
+----------------------
+* Move to github
+
+1.0 (2014-03-21)
+----------------------
+* Move to github
+
+(2008-03)
+----------------------
+* bug fixes by K. Sethu

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package>
+  <System>
+    <KeymanDeveloperVersion>18.0.240.0</KeymanDeveloperVersion>
+    <FileVersion>7.0</FileVersion>
+  </System>
+  <Options>
+    <ExecuteProgram></ExecuteProgram>
+    <ReadMeFile>readme.htm</ReadMeFile>
+    <GraphicFile>sideimage.bmp</GraphicFile>
+    <LicenseFile>..\..\..\gff\gff_amh_7\LICENSE.md</LicenseFile>
+    <MSIFileName></MSIFileName>
+    <MSIOptions></MSIOptions>
+  </Options>
+  <StartMenu>
+    <Folder>GFF Amharic Keyboard</Folder>
+    <AddUninstallEntry/>
+    <Items>
+      <Item>
+        <Name>Welcome</Name>
+        <FileName>..\..\..\gff\gff_amh_7\source\welcome.htm</FileName>
+        <Arguments></Arguments>
+        <Icon></Icon>
+        <Location>psmelStartMenu</Location>
+      </Item>
+      <Item>
+        <Name>Amharic Keyboard Manual (Amharic)</Name>
+        <FileName>AmharicTyping-Amharic.pdf</FileName>
+        <Arguments></Arguments>
+        <Icon></Icon>
+        <Location>psmelStartMenu</Location>
+      </Item>
+      <Item>
+        <Name>Amharic Keyboard Manual (English)</Name>
+        <FileName>AmharicTyping-English.pdf</FileName>
+        <Arguments></Arguments>
+        <Icon></Icon>
+        <Location>psmelStartMenu</Location>
+      </Item>
+      <Item>
+        <Name>OFL (Abyssinica SIL Licence)</Name>
+        <FileName>OFL.txt</FileName>
+        <Arguments></Arguments>
+        <Icon></Icon>
+        <Location>psmelStartMenu</Location>
+      </Item>
+      <Item>
+        <Name>GPL (WashRa + Free Serif Licence)</Name>
+        <FileName>GNU-GPLv2.txt</FileName>
+        <Arguments></Arguments>
+        <Icon></Icon>
+        <Location>psmelStartMenu</Location>
+      </Item>
+    </Items>
+  </StartMenu>
+  <Info>
+    <WebSite URL="http://keyboards.ethiopic.org">http://keyboards.ethiopic.org</WebSite>
+    <Version URL="">8.2</Version>
+    <Name URL="">GFF Amharic</Name>
+    <Copyright URL="">Creative Commons Attribution 3.0</Copyright>
+    <Author URL="mailto:keyboards@ethiopic.org">The Ge'ez Frontier Foundation</Author>
+    <Description URL="">An intuitive, easy to use, keyboard for entering Amharic with standard
+English keyboards according to the GFF convention for Ethiopic script
+languages.
+
+[Compare different Ethiopic keyboards
+online](http://ethiopic.keymankeyboards.com/) now with KeymanWeb (no
+download required).
+
+-   [Principles and Specification for Mnemonic Ethiopic
+Keyboards](http://keyboards.ethiopic.org/specification/)</Description>
+  </Info>
+  <Files>
+    <File>
+      <Name>readme.htm</Name>
+      <Description>File readme.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>sideimage.bmp</Name>
+      <Description>File sideimage.bmp</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.bmp</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\gff\gff_amh_7\source\AmharicTyping-Amharic.pdf</Name>
+      <Description>File AmharicTyping-Amharic.pdf</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.pdf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\gff\gff_amh_7\source\AmharicTyping-English.pdf</Name>
+      <Description>File AmharicTyping-English.pdf</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.pdf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\geez\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\geez\GNU-GPLv2.txt</Name>
+      <Description>File GNU-GPLv2.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\gff\gff_amh_7\source\welcome.htm</Name>
+      <Description>File Welcome.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\geez\FreeSerif.otf</Name>
+      <Description>Font Free Serif</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.otf</FileType>
+    </File>
+    <File>
+      <Name>..\build\gff_amh_7.kvk</Name>
+      <Description>File gff_amh_7.kvk</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kvk</FileType>
+    </File>
+    <File>
+      <Name>..\build\gff_amh_7.kmx</Name>
+      <Description>Keyboard Amharic</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kmx</FileType>
+    </File>
+    <File>
+      <Name>..\build\gff_ethiopic_7.kvk</Name>
+      <Description>File gff_ethiopic_7.kvk</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kvk</FileType>
+    </File>
+    <File>
+      <Name>..\build\gff_ethiopic_7.kmx</Name>
+      <Description>Keyboard Ethiopic - (Language Neutral)</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kmx</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSIL-Regular.ttf</Name>
+      <Description>Font Abyssinica SIL</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\gff\gff_amh_7\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\geez\WaldbaFantuwua-Regular.ttf</Name>
+      <Description>Font ዋልድባ - ፋንትዋ Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\geez\WaldbaHiwua-Regular.ttf</Name>
+      <Description>Font ዋልድባ - ህዋእ Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\geez\WaldbaJiret-Regular.ttf</Name>
+      <Description>Font ዋልድባ - ጅረት Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\geez\WaldbaTint-Regular.ttf</Name>
+      <Description>Font ዋልድባ - ጥንት Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\geez\WaldbaWookianos-Regular.ttf</Name>
+      <Description>Font ዋልድባ - ውቂያኖስ Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\geez\WaldbaYebse-Regular.ttf</Name>
+      <Description>Font ዋልድባ - የብሰ Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\geez\WaldbaYigezuBisratGoffer-Regular.ttf</Name>
+      <Description>Font ዋልድባ - ይገዙ ብሥራት ጎፈር Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\geez\WaldbaYigezuBisratGothic-Regular.ttf</Name>
+      <Description>Font ዋልድባ - ይገዙ ሥራት ጎቲክ Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\geez\WaldbaZelan-Regular.ttf</Name>
+      <Description>Font ዋልድባ - ዘላን Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+  </Files>
+  <Keyboards>
+    <Keyboard>
+      <ID>gff_amh_7</ID>
+      <Languages>
+        <Language ID="am">Amharic</Language>
+      </Languages>
+    </Keyboard>
+    <Keyboard>
+      <ID>gff_ethiopic_7</ID>
+      <Languages/>
+    </Keyboard>
+  </Keyboards>
+  <RelatedPackages>
+    <RelatedPackage ID="gff-amh-powerpack-7" Relationship="deprecates"/>
+  </RelatedPackages>
+  <Strings/>
+</Package>

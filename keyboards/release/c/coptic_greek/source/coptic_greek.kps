@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package>
+  <System>
+    <KeymanDeveloperVersion>17.0.328.0</KeymanDeveloperVersion>
+    <FileVersion>7.0</FileVersion>
+  </System>
+  <Options>
+    <ExecuteProgram></ExecuteProgram>
+    <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
+    <MSIFileName></MSIFileName>
+    <MSIOptions></MSIOptions>
+    <FollowKeyboardVersion/>
+  </Options>
+  <StartMenu>
+    <Folder></Folder>
+    <Items/>
+  </StartMenu>
+  <Info>
+    <Version URL=""></Version>
+    <Name URL="">Coptic (Greek)</Name>
+    <Copyright URL="">© Michael Everson, evertype.com.</Copyright>
+    <Author URL="">Michael Everson</Author>
+    <Description URL="">This keyboard layout is designed for typing the Coptic script. This
+keyboard is based on Apple\'s Greek keyboard layout. It is useful for
+people who type a lot of Greek and a little Coptic. The related keyboard
+supports a touch layout.</Description>
+  </Info>
+  <Files>
+    <File>
+      <Name>..\build\coptic_greek.js</Name>
+      <Description>File coptic_greek.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
+    <File>
+      <Name>..\build\coptic_greek.kvk</Name>
+      <Description>File coptic_greek.kvk</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kvk</FileType>
+    </File>
+    <File>
+      <Name>..\build\coptic_greek.kmx</Name>
+      <Description>Keyboard Coptic (Greek)</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kmx</FileType>
+    </File>
+    <File>
+      <Name>readme.htm</Name>
+      <Description>File readme.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>welcome\LayoutU_.png</Name>
+      <Description>File LayoutU_.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\LayoutU_RA.png</Name>
+      <Description>File LayoutU_RA.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\LayoutU_S.png</Name>
+      <Description>File LayoutU_S.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\LayoutU_SRA.png</Name>
+      <Description>File LayoutU_SRA.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\welcome.htm</Name>
+      <Description>File welcome.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>welcome\coptic-greek-keys-2.1.pdf</Name>
+      <Description>File coptic-greek-keys-2.1.pdf</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.pdf</FileType>
+    </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\aegyptus\Aegyptus.otf</Name>
+      <Description>Font Aegyptus</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.otf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\aegyptus\Aegyptus.pdf</Name>
+      <Description>File Aegyptus.pdf</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.pdf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\aegyptus\AegyptusBold.otf</Name>
+      <Description>Font Aegyptus Bold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.otf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\aegyptus\license.txt</Name>
+      <Description>File license.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+  </Files>
+  <Keyboards>
+    <Keyboard>
+      <Name>Coptic (Greek)</Name>
+      <ID>coptic_greek</ID>
+      <Version>2.4</Version>
+      <OSKFont>..\..\..\shared\fonts\aegyptus\Aegyptus.otf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\aegyptus\Aegyptus.otf</DisplayFont>
+      <Languages>
+        <Language ID="cop">Coptic</Language>
+      </Languages>
+      <Examples>
+        <Example ID="cop" Keys="[RALT+T] m e t r e m n [oE2] x h m i" Text="ϯⲙⲉⲧⲣⲉⲙⲛ̀ⲭⲏⲙⲓ‎" Note=""/>
+      </Examples>
+    </Keyboard>
+  </Keyboards>
+  <RelatedPackages>
+    <RelatedPackage ID="coptic_qwerty"/>
+  </RelatedPackages>
+  <Strings/>
+</Package>
